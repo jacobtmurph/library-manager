@@ -1,0 +1,24 @@
+{
+  "name": "library-manager",
+  "version": "1.0.0",
+  "description": "A Simple Library Manager built with Pug, Express, and Sequlize",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "library",
+    "books",
+    "management",
+    "data"
+  ],
+  "author": "Jacob T. Murphy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "sequelize": "^4.42.0",
+    "sequelize-cli": "^5.4.0",
+    "sqlite3": "^4.0.6"
+  }
+}
