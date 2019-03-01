@@ -4,6 +4,7 @@
   "description": "A Simple Library Manager built with Pug, Express, and Sequlize",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
