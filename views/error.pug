@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+
+    h3 Server Error: #{error.message}
+    h4= error.status
+    pre Sorry! There was an unexpected error on the server.
+    p= error.stack
