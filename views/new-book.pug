@@ -1,12 +1,14 @@
 extends layout.pug
 
 block content
+    //- Display errors if any are thrown
     if(errors)
         h2.error Oooops!
         ul.error
             each error in errors
              li=error.message
-   
+
+    //- Form to add a new book with title, author, genre, and year attributes
     form(action=`/books/new`, method="post")
         p
             label(for="title") Title

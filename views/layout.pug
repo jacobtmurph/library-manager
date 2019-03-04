@@ -1,16 +1,19 @@
 <!DOCTYPE html>
+//-Set Head and META details
 html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-
+        //- Set a block that allows aditional user scripts
         block scripts
             link(rel="stylesheet", href="/static/stylesheets/style.css")
-        
+        //- Title the page according to the passed title in app.js
         title= title
     body
+        //- Display page title
         h1= title
         
+        //- Page content block
         block content
 

@@ -2,12 +2,14 @@ extends layout.pug
 
 block content
     h3 Update Book
+    //- Display errors if any are thrown
     if(errors)
         h2.error Oooops!
         ul.error
             each error in errors
              li=error.message
 
+    //- Form to update book, which is autofilled with already existing data
     form(action=`/books/${book.id}`, method="post")
         p
             label(for="title") Title
@@ -23,6 +25,8 @@ block content
             input(name="year" type="text" id="year" value=`${book.year}`)
         p
             input(type="submit" value="Update This Book")
+    
+    //- Form to delete this book entry from the Database
     form(action=`/books/${book.id}/delete`, method="post", onsubmit="return confirm('Do you really want to delete this book?');")
         p
             a(class="button" href="/books") Cancel

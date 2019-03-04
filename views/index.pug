@@ -1,13 +1,15 @@
 extends layout.pug
 
 block content
+    //- Button to redired to the new book form
     p
         a(class="button" href="/books/new") Create New Book
 
 
-
+    //- Table of books in the database
     table
         thead
+            //- Row headings
             tr
                 th Title
                 th Author
@@ -15,6 +17,7 @@ block content
                 th Year
         tbody
             each book in books
+                //- Format for each book to be displayed with given details
                 tr
                     td
                         a(href=`/books/${book.id}`)= book.title
